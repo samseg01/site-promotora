@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-home.css">    
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <section>
+            High Bank 
+            <div class="logo"></div> 
+            <hr width="30px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contatos</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </section>
+        <button id="entrar" class="entrar">entrar</button>
+    </header>
+    <main>
+        <section class="sec" id="sec1">
+            <div class="texto">
+                <h1>Aqui vai um título bem chamativo.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum, orci sit amet finibus egestas, ligula diam imperdiet felis, vitae auctor ligula sem quis eros.</p>
+            </div>
+            <div class="content-btn">
+                <button id="entrar" class="entrar">entrar</button>
+                ou
+                <button>Cadastre-se</button>
+            </div>
+        </section>
+
+        <section class="sec" id="sec2">
+            <div class="esquerda">
+                <div class="texto">
+                    <h1>Quem somos?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum, orci sit amet finibus egestas, ligula diam imperdiet felis, vitae auctor ligula sem quis eros.</p>
+                </div>
+                <div class="content-btn">
+                    <button id="entrar" class="entrar">entrar</button>
+                    ou
+                    <button>Cadastre-se</button>
+                </div>
+            </div>
+            <div class="direita">
+                <div id="foto-woh"></div>
+            </div>
+        </section>
+        <section class="sec" id="sec3">
+            <div class="img-sec3"></div>
+            <div class="img-sec3"></div>
+            <div class="img-sec3"></div>
+        </section>
+        <section class="sec"></section>
+        <section class="sec"></section>
+    </main>
+    <footer>
+        <div class="footer-contet"></div>
+        <div class="footer-contet"></div>
+        <div class="footer-contet"></div>
+        <div class="footer-contet"></div>
+    </footer>
+    <script>
+        document.querySelectorAll('.entrar').forEach((element) =>
+            element.addEventListener('click', function(){
+            window.location.href = 'login.html'
+        }))
+    </script>
+</body>
+</html>
