@@ -6,7 +6,7 @@ body {
     align-items: center;
 }
 .content {
-    height: 80%;
+    height: max-content;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -14,20 +14,21 @@ body {
 
     border: 1px solid rgba(245, 245, 245, 0.575);
     border-radius: 3%;
-    box-shadow: rgba(0, 0, 0, 0.349) 6px 8px 20px 1px;
+    box-shadow: rgba(0, 0, 0, 0.349) 8px 8px 20px 1px;
     padding: 5% 2% 5% 2%;
     max-width: 410px;
 }
 h1 {
     margin-bottom: 2%;
 }
-form {
+#loginForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: fit-content;
     margin-bottom: 5%;
+
 }
 ul {
     display: flex;
@@ -64,7 +65,7 @@ input:focus {
 input[type="email"] {
     background-color: white;
 }
-input[type="submit"] {
+input[type="button"] {
     border: 1px solid black;
     border-radius: 6px;
     margin-top: 7%;
@@ -74,10 +75,17 @@ input[type="submit"] {
     0%{background-color: white;}
     100%{background-color: rgb(85, 252, 252);}
 }
-input[type="submit"]:hover{
+input[type="button"]:hover{
     animation: click 1s;
     background-color: rgb(85, 252, 252);
 }
 a {
     margin-bottom: 2%;
+}
+
+@media (orientation: portrait){
+    .content {
+        width: 83%;
+        padding: 5% 4% 5% 4%;
+    }
 }

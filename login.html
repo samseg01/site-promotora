@@ -10,22 +10,23 @@
 <body>
     <div class="content">
         <h1>login</h1>
-        <form action="" id="form">
+        <form id="loginForm">
             <ul>
                 <li>
                     <span>e-mail</span>
-                    <input type="email" placeholder="Digite aqui seu e-mail">
+                    <input type="email" placeholder="Digite aqui seu e-mail" id="email">
                 </li>
                 <li>
                     <span>senha</span>
-                    <input type="password" placeholder="senha">
+                    <input type="password" placeholder="senha" id="senha">
                 </li>
                 <a href="">esqueci a senha</a>
-                <li><input type="submit" value="login"></li>
+                <li><input type="button" value="login" onclick="submitForm()"></li>
             </ul>
 
         </form>
         <p><a href="/cadastro.html">ou cadastre-se</a></p>
     </div>
+    <script src="/script/validation.js"></script>
 </body>
 </html>
