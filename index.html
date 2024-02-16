@@ -9,19 +9,51 @@
 </head>
 <body>
     <header>
-        <section>
-            High Bank 
+        <div class="btn-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="box-logo">
+            high bank 
             <div class="logo"></div> 
-            <hr width="30px">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Contatos</a></li>
-                <li><a href="">Sobre</a></li>
-            </ul>
-        </section>
+            <!-- <hr width="30px"> -->
+
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
         <button id="entrar" class="entrar">entrar</button>
+        
     </header>
-    <main>
+    <section id="menu-portrait">
+        <div class="container-btn">
+            <div class="btn-menU">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="box-logo">
+            high bank 
+            <div class="logo"></div> 
+            <!-- <hr width="30px"> -->
+
+        </div>
+        <ul>
+            <hr>
+            <li><div id="home">Home</div></li>
+            <hr>
+            <li><div id="contato">Contatos</div></li>
+            <hr>
+            <li><div id="sobre">Sobre</div></li>
+            <hr>
+        </ul>
+        <button id="entrar" class="entrar">entrar</button>
+    </section>
+    <main class="main">
         <section class="sec" id="sec1">
             <div class="texto">
                 <h1>Aqui vai um título bem chamativo.</h1>
@@ -30,7 +62,7 @@
             <div class="content-btn">
                 <button id="entrar" class="entrar">entrar</button>
                 ou
-                <button>Cadastre-se</button>
+                <button class="btnCadastro">Cadastre-se</button>
             </div>
         </section>
 
@@ -43,7 +75,7 @@
                 <div class="content-btn">
                     <button id="entrar" class="entrar">entrar</button>
                     ou
-                    <button>Cadastre-se</button>
+                    <button class="btnCadastro">Cadastre-se</button>
                 </div>
             </div>
             <div class="direita">
@@ -64,11 +96,6 @@
         <div class="footer-contet"></div>
         <div class="footer-contet"></div>
     </footer>
-    <script>
-        document.querySelectorAll('.entrar').forEach((element) =>
-            element.addEventListener('click', function(){
-            window.location.href = 'login.html'
-        }))
-    </script>
+    <script src="/script/index.js"></script>
 </body>
 </html>

@@ -1,50 +1,69 @@
+:root {
+    --black : black;
+    --bege : #ECECEC;
+    --cinza : #B3B3B3;
+}
+
+
 body{
-    margin: 0px;
-    padding: 0px;
     height: 100vh;
     width: 100%;
-    background-color: #B3B3B3;
 }
 header{
     border: none;
-    background-color: #ECECEC;
-    height: 100px;
+    background-color: var(--bege);
+    height: fit-content;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     font-size: 15px;
-}
-header section{
-    width: max-content;
+    font-weight: 600;
+    padding: 7px 15px 7px 15px;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-}
 
+    ul{
+        width: min-content;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0px;
+        gap: 20px;
+    }
+    
+}
+.box-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 4px;
+}
 .logo{
     width: 50px;
     height: 50px;
-    border-radius: 70px;
+    border-radius: 100%;
     border: 2px solid white;
     background-color: aqua;
     background-size: 100%;
 }
+.btn-menu {
+    height: 20px;
+    width: 20px;
 
-header section hr{
-    transform: rotate(90deg);
-    color: #B3B3B3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .line {
+        width: 100%;
+        height: 20%;
+        background-color: black;
+    }
 }
-header ul{
-    width: min-content;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0px;
-    gap: 20px;
-}
-header #entrar{
+button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +72,46 @@ header #entrar{
     border-radius: 4px;
     font-family: 'Sora', sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     border: 2px solid #B3B3B3;
+}
+#menu-portrait {
+    display: none;
+
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 60%;
+    background-color: var(--bege);
+    padding: 6px;
+
+    .container-btn {
+        height: 50px;
+        width: 100%;
+    }
+    .box-logo {
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+    }
+    li {
+        width: 100%;
+        height: 40px;
+        list-style: none;
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }    
+    }
+    .entrar {
+        position: relative;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+    }
 }
 #entrar:hover{
     background-color:aliceblue;
@@ -68,7 +125,8 @@ header #entrar{
     padding-top: 50px;
     padding-bottom: 50px;
     height: max-content;
-    background-color: #B3B3B3;
+    background-color: black;
+    color: var(--bege);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,12 +145,13 @@ header #entrar{
         height: 35px;
         margin: 5px;
         border-radius: 5px;
+        border: 2px solid var(--cinza);
     }
 }
 #sec2{
 
     height: 500px;
-    background-color: #ECECEC;;
+    background-color: var(--bege);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -113,7 +172,6 @@ header #entrar{
         height: 35px;
         margin: 5px;
         margin-top: 30px;
-        border-radius: 5px;
     } 
 }
 #sec2 .esquerda{
@@ -139,7 +197,7 @@ header #entrar{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #B3B3B3;
+    background-color: var(--black);
     width: 100%;
     height: 80vh;
 }
@@ -172,4 +230,19 @@ footer{
     background-color: aqua;
     border-radius: 70px;
     border: 2px solid white;
+}
+@media(max-width: 600px){
+    header{
+        justify-content: space-between;
+        .btn-menu {
+            display: flex;
+        }
+        .box-logo, ul {
+            display: none;
+        }
+    }
+    
+    #menu-portrait {
+        opacity: 100%;
+    }
 }

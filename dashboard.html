@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-dashboard.css">
+</head>
+    
+<body>
+    <section class="menu">
+        <ul>
+            <li id="home">home</li>
+            <hr>
+            <li id="time">time</li>
+            <hr>
+            <li id="horarios">horarios</li>
+            <hr> 
+            <li id="metas">metas</li>
+            <hr> 
+            <li id="escalas">escalas</li>
+        </ul>
+        <button id="encerrar_session">!</button>
+    </section>
+    <section class="dashboard">
+        <div class="content"></div>
+    </section>
+    <script>
+        document.getElementById('encerrar_session').addEventListener('click', ()=>{
+            window.location.href = 'login.html'
+        })
+        
+    </script>
+</body>
+</html>
